@@ -9,19 +9,21 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: sticky;
+  top: 0;
+  width: 25vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 40px auto;
+  padding: 15px 5px;
+  z-index: 100;
+  background: #1e1e1e;
+  border-radius: 10px;
 }
 
 .App-link {
@@ -34,5 +36,104 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+
+/* Reset default margin and padding */
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+}
+
+/* Header styling */
+header {
+  background-color: #1e2a38;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-family: Weimar;
+  font-weight: 400;
+  padding: 13px 10px 10px 10px;
+  margin: 10px 10px;
+  vertical-align: bottom;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #f46c38;
+  color: black;
+}
+
+/* Main content styling */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* About section styling */
+#about {
+  margin-bottom: 3rem;
+}
+
+/* Projects section styling */
+#projects {
+  margin-bottom: 3rem;
+}
+
+/* Contact section styling */
+#contact {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  color: black;
+}
+
+#contact p {
+  color: #1e2a38;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  header nav {
+    text-align: center;
+  }
+
+  header li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 0 2rem;
   }
 }

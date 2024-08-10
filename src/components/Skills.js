@@ -1,33 +1,31 @@
 import React from "react";
+import boff from "../assets/images/boff.svg";
+import bon from "../assets/images/bon.svg";
+import { StaticCloud } from "./Cloud";
 
 const skillLevel = (val) => {
   const num = [];
   for (let index = 0; index < val; index++) {
     num.push(
-      <img
-        className="p-[3px] object-contain"
-        src={require("../assets/images/bon.png")}
-        key={index}
-      />
+      <img className="mx-1 object-cover w-3 h-3" src={bon} key={index} />
     );
   }
   for (let index = 0; index < 10 - val; index++) {
     num.push(
-      <img
-        className="p-[3px] object-contain"
-        src={require("../assets/images/boff.png")}
-        key={index}
-      />
+      <img className="mx-1 object-cover w-3 h-3" src={boff} key={index} />
     );
   }
-  return <div className="flex flex-row no-wrap px-2 mr-0">{num}</div>;
+  return (
+    <div className="flex flex-row no-wrap px-2 mr-0 items-center">{num}</div>
+  );
 };
 const Skills = () => {
+  const items = ["that is ", "not good"];
   return (
     <div
+      id="skills"
       className="relative m-8 rounded-xl 
-    p-8 bg-[url('/src/assets/images/bg4.png')] bg-cover
-    shadow-inner shadow-[0_0_19px_-6px_rgba(213,255,47,0.80)_inset]"
+    p-8 bg-[url('/src/assets/images/bg4.png')] bg-cover shadow-[0_0_19px_-6px_rgba(213,255,47,0.80)_inset] bg-fixed"
     >
       <div className="absolute font-['Weimar'] top-[-50px] text-white text-[80px] font-bold">
         SKILLS
@@ -69,8 +67,34 @@ const Skills = () => {
             {skillLevel(8)}
           </div>
         </div>
-        <div></div>
-        <div></div>
+
+        <div>
+          <StaticCloud />
+        </div>
+        <div className="w-1/3">
+          <div className="font-['Weimar'] text-[20px] text-center tracking-[6px] p-6">
+            LANGUAGES & TOOLS
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="354"
+              height="2"
+              viewBox="0 0 354 2"
+              fill="none"
+            >
+              <path
+                d="M1 1H353"
+                stroke="#C0BAC3"
+                stroke-opacity="0.8"
+                stroke-width="0.550592"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div className="flex flex-wrap">
+            Java, C, C++, Python, MySQL, MongoDB, HTML, CSS, bootstrap,
+            Tailwind, javascript, ReactJS, ExpressJS, NodeJS
+          </div>
+        </div>
       </div>
     </div>
   );

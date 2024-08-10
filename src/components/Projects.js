@@ -1,12 +1,8 @@
 import React from "react";
+import SmoothScroll from "./SmoothScroll";
 
 const Projects = () => {
-  return (
-    <section id="projects">
-      <h2>Projects</h2>
-      {/* Display your projects here */}
-    </section>
-  );
+  return <SmoothScroll />;
 };
 
 export default Projects;

@@ -97,31 +97,6 @@ main {
   padding: 0 1rem;
 }
 
-/* About section styling */
-#about {
-  margin-bottom: 3rem;
-}
-
-/* Projects section styling */
-#projects {
-  margin-bottom: 3rem;
-}
-
-/* Contact section styling */
-#contact {
-  text-align: center;
-  padding: 3rem 0;
-  background-color: #f9f9f9;
-}
-
-#contact h2 {
-  color: black;
-}
-
-#contact p {
-  color: #1e2a38;
-}
-
 /* Responsive design */
 @media screen and (max-width: 768px) {
   header nav {
@@ -136,4 +111,7 @@ main {
   main {
     padding: 0 2rem;
   }
+}
+html {
+  scroll-behavior: smooth;
 }

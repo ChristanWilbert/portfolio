@@ -32,5 +32,41 @@ code {
   src: local("HelveticadNueRoman"),
     url(./fonts/HelveticaNeue-Roman.otf) format("woff");
 }
+
+@font-face {
+  font-family: "HelNeu-Light";
+  src: url("./fonts/HelveticaNeue-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HelNeu-Med";
+  src: url("./fonts/HelveticaNeue-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HelNeu-Med-Itc";
+  src: url("./fonts/HelveticaNeue-MediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "HelNeu-Bld";
+  src: url("./fonts/HelveticaNeueBd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HelNeu-Heavy";
+  src: url("./fonts/HelveticaNeueHv.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HelNeu-Thin";
+  src: url("./fonts/HelveticaNeueThin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Sansita-Reg";
+  src: url("./fonts/Sansita-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jost-Reg";
+  src: url("./fonts/Jost-Regular.ttf") format("truetype");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Racing+Sans+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=DM+Mono:wght@300&family=Racing+Sans+One&display=swap");

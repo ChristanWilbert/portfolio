@@ -24,15 +24,15 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="relative m-8 rounded-xl 
+      className="relative m-1 md:m-8 rounded-xl 
     p-8 bg-[url('/src/assets/images/bg4.png')] bg-cover shadow-[0_0_19px_-6px_rgba(213,255,47,0.80)_inset] bg-fixed"
     >
-      <div className="absolute font-['Weimar'] top-[-50px] text-white text-[80px] font-bold">
+      <div className="absolute font-['Weimar'] top-[-10px] md:top-[-50px] text-white text-3xl md:text-[80px] font-bold">
         SKILLS
       </div>
-      <div className="flex flex-row m-8 text-white">
+      <div className="flex flex-col md:flex-row m-1 md:m-8 text-white">
         <div>
-          <div className="font-['Weimar'] text-[20px] text-center tracking-[10px] p-6">
+          <div className="font-['Weimar'] text-lg md:text-[20px] text-center tracking-[10px] p-6">
             INTERPERSONAL
             <svg
               xmlns="http://www.w3.org/2000/svg"

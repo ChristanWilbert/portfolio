@@ -28,7 +28,7 @@ const Certificate = () => {
       id="certificate"
       className=" relative h-max mx-8 my-[100px] text-[#C0BAC3] bg-fixed bg-cover rounded-xl bg-[url('/src/assets/images/bg21.png')] font-['Helvetica']"
     >
-      <div className="absolute top-[-50px] px-8 font-['Weimar'] text-[#ffffff] text-[80px]">
+      <div className="absolute top-[-.5%] md:top-[-50px] px-8 font-['Weimar'] text-[#ffffff] text-3xl md:text-[80px]">
         CERTIFICATES
       </div>
       <p className="w-[70%] px-8 py-[60px]">

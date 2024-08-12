@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-black text-white p-4 flex flex-col md:flex-row justify-center items-center z-50 m-0">
-      <div className="visible md:hidden h-20 ">
+      <div className="visible md:hidden h-20 content-center">
         <button
           onClick={toggleMenu}
           className="focus:outline-none"
@@ -18,7 +18,7 @@ const Navbar = () => {
         >
           {/* Hamburger Menu Icon */}
           <div
-            className="flex flex-col"
+            className="flex flex-col "
             style={{
               backgroundColor: "rgb(5, 5, 5)",
             }}

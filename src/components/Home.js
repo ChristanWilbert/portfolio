@@ -2,9 +2,12 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 const Home = () => {
   return (
-    <div className="flex mx-[2vw] mt-20" id="home">
-      <div className="w-2/5">
-        <div className="bg-white p-2 mx-auto rounded-lg relative max-w-[370px]">
+    <div
+      className=" flex flex-col md:flex-row mx-2 md:mx-[2vw] mt-28 md:mt-20 w-full md:w-auto"
+      id="home"
+    >
+      <div className="w-4/5 justify-center md:w-2/5 mx-auto">
+        <div className="bg-white p-2 mx-auto rounded-lg relative w-full md:max-w-[370px]">
           <img
             className="absolute top-0 right-0"
             src={require("../assets/images/curved-arrow.png")}
@@ -16,7 +19,9 @@ const Home = () => {
             ></img>
           </div>
           <div className="flex-column justify-center text-center">
-            <p className="bold font-['impact'] text-5xl">CHRISTAN WILBERT</p>
+            <p className="bold font-['impact'] text-3xl md:text-5xl">
+              CHRISTAN WILBERT
+            </p>
             <div className="p-3 font-['Helvetica']">DEVELOPER</div>
             <img
               className="mx-auto"
@@ -38,45 +43,45 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="w-3/5 flex-column">
-        <div className="text-white font-['Weimar'] text-8xl font-bold py-2 mt-5">
+      <div className="w-full md:w-3/5 flex-column items-center text-center md:text-left">
+        <div className="text-white font-['Weimar'] text-3xl md:text-8xl font-bold py-2 mt-5">
           SOFTWARE
         </div>
-        <div class="text-[#454346] font-['Weimar'] text-8xl font-bold">
+        <div class="text-[#454346] font-['Weimar'] text-3xl md:text-8xl font-bold">
           DEVELOPER
         </div>
-        <div class="flex">
-          <div className="w-[70%] text-xl text-[#787579]">
+        <div class="flex flex-col md:flex-row items-center">
+          <div className="w-[70%] text-lg md:text-xl text-[#787579] text-center md:text-left">
             A tech aficionado with exceptional skills in web and mobile app
             development. Mastering software, web, and app development, I also
             excel in hosting on AWS and Google Cloud. Let's build the future
             together, one innovative project at a time!
           </div>
-          <div>
+          <div className="my-2">
             <img src={require("../assets/images/ASTERIKS.png")}></img>
           </div>
         </div>
-        <div className="flex">
-          <div className="w-[30%] rounded-lg content-center text-center  h-[250px] my-10 relative bg-[url('/src/assets/projects/vpackProjectContactUs.png')] bg-contain bg-no-repeat">
+        <div className="flex flex-row">
+          <div className="w-full md:w-[30%] rounded-lg content-center text-center h-[150px] md:h-[250px] my-1 md:my-10 relative bg-[url('/src/assets/projects/vpackProjectContactUs.png')] bg-contain bg-no-repeat mx-1">
             <img
               className="absolute bottom-[20px] right-[20px]"
               src={require("../assets/images/Group 4.png")}
             />
           </div>
 
-          <div className="w-[45%] rounded-lg content-center text-center  h-[250px] relative bg-[url('/src/assets/projects/solarometerGreenify.png')] bg-contain bg-no-repeat m-10">
+          <div className="w-full md:w-[45%] rounded-lg content-center text-center  h-[250px] relative bg-[url('/src/assets/projects/solarometerGreenify.png')] bg-contain bg-no-repeat mx-1 md:m-10">
             <img
               className="absolute bottom-[20px] right-[20px]"
               src={require("../assets/images/Group 5.png")}
             />
           </div>
         </div>
-        <div className="flex">
-          <div className="w-[50%]">
-            <div className="text-white text-3xl font-bold">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[50%]">
+            <div className="text-white text-xl md:text-3xl font-bold pb-8 md:pb-1">
               What I Do For My Customers
             </div>
-            <div className=" text-[#787579]">
+            <div className=" text-[#787579] text-sm md:text-base">
               Dedicated to ensuring companies achieve optimal exposure and meet
               customer expectations. I specialize in presenting businesses with
               the best look and feel on the web, creating scalable and
@@ -84,7 +89,7 @@ const Home = () => {
               technologies for maximum impact.
             </div>
           </div>
-          <div className="flex flex-wrap w-[30%] flex-row-reverse text-[28px] text-[#151412] font-bold">
+          <div className="flex flex-wrap w-full md:w-[30%] flex-row-reverse text-[28px] text-[#151412] font-bold">
             <Tilt>
               <div className="font-['Weimar'] text-xl rounded-lg bg-[#D5FF2F] p-1 m-2 text-center content-center">
                 PYTHON

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
+  const [isOpen, setIsOpen] = useState(!isMobile);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -48,35 +49,71 @@ const Navbar = () => {
       <ul
         className={`${
           isOpen ? "block" : "hidden"
-        } w-full bg-black md:relative md:w-auto flex flex-col md:flex-row items-center`}
+        } w-full bg-black md:relative md:w-auto flex flex-col md:flex-row items-center text-lg md:text-base`}
       >
-        <li className="p-2">
-          <a href="#home" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#home"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             HOME
           </a>
         </li>
-        <li className="p-2">
-          <a href="#about" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#about"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             ABOUT
           </a>
         </li>
-        <li className="p-2">
-          <a href="#projects" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#projects"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             PROJECTS
           </a>
         </li>
-        <li className="p-2">
-          <a href="#certificate" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#certificate"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             CERTIFICATES
           </a>
         </li>
-        <li className="p-2">
-          <a href="#skills" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#skills"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             SKILLS
           </a>
         </li>
-        <li className="p-2">
-          <a href="#contact" className="hover:text-white">
+        <li className="px-2">
+          <a
+            href="#contact"
+            className="hover:text-white"
+            onClick={() => {
+              if (isMobile) setIsOpen(false);
+            }}
+          >
             CONTACT
           </a>
         </li>

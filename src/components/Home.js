@@ -81,7 +81,7 @@ const Home = () => {
             <div className="text-white text-xl md:text-3xl font-bold pb-8 md:pb-1">
               What I Do For My Customers
             </div>
-            <div className=" text-[#787579] text-sm md:text-base">
+            <div className=" text-[#787579] text-sm md:text-base pb-4">
               Dedicated to ensuring companies achieve optimal exposure and meet
               customer expectations. I specialize in presenting businesses with
               the best look and feel on the web, creating scalable and

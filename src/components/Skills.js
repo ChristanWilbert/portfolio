@@ -68,11 +68,11 @@ const Skills = () => {
           </div>
         </div>
 
-        <div>
+        <div className="my-2">
           <StaticCloud />
         </div>
-        <div className="w-1/3">
-          <div className="font-['Weimar'] text-[20px] text-center tracking-[6px] p-6">
+        <div className="w-full md:w-1/3">
+          <div className="font-['Weimar'] texl-2xl md:text-[20px] text-left md:text-center tracking-[6px] p-6">
             LANGUAGES & TOOLS
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ const Skills = () => {
               />
             </svg>
           </div>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap text-center text-sm md:text-base">
             Java, C, C++, Python, MySQL, MongoDB, HTML, CSS, bootstrap,
             Tailwind, javascript, ReactJS, ExpressJS, NodeJS
           </div>

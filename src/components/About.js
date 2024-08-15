@@ -4,19 +4,20 @@ const About = () => {
   return (
     <div className="overflow-hidden w-full">
       <Tilt tiltMaxAngleX={2} tiltMaxAngleY={2}>
-        <div className=" flex flex-col md:flex-row relative mx-2 md:mx-10 text-[#C0BAC3] bg-cover my-10 rounded-xl bg-[url('/src/assets/images/bg1.png')] font-['impact']">
+        <div className=" flex flex-col md:flex-row relative mx-2 md:mx-10 text-[#C0BAC3] bg-cover my-10 rounded-3xl bg-[url('/src/assets/images/bg1.png')] font-['impact']">
           <div className="w-full md:w-[60%]">
-            <p className="absolute leading-[6rem] top-[-11%] md:top-[-50px] left-[50px] w-[35%] text-2xl md:text-[6.1vw] ">
-              HEY THERE, I'M CHRISTAN
+            <p className="absolute md:leading-[5rem] top-[-3%] md:top-[-50px] left-[50px] md:w-[35%] text-2xl md:text-[5vw] ">
+              HEY THERE,
+              <br /> I'M CHRISTAN
             </p>
-            <p className="pt-[12vw] pl-[4.8rem] font-['Helvetica']">
+            <p className="pt-[12vw] px-6 md:pl-[4.8rem] font-['Helvetica'] text-justify md:text-left text-sm md:text-base">
               It is more than business to me to ensure that all the business out
               their get the exposure that they deserve to ensure their products
               and services reach the customers in a seamless and continuious
               fashion. I would personaly make sure that everythig runs smooth
               with the application of the latest technology.
             </p>
-            <div className="px-10">
+            <div className="px-auto md:px-10">
               <p className="p-8 font-['impact'] text-[30px]">Contact</p>
               <div className="inline m-8 rounded-xl border-2 border-[#787579] text-[#787579] p-6">
                 cwchristan@gmail.com

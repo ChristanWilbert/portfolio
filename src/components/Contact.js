@@ -18,10 +18,22 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Add form submission logic here
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const response = await fetch(
+      "https://00tkjih5x1.execute-api.ap-south-1.amazonaws.com/default/getInTouchMail",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    const result = await response.json();
+    console.log(result);
   };
 
   return (

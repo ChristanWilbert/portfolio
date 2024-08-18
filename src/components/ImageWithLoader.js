@@ -15,7 +15,7 @@ const ImageWithLoader = ({ src, alt }) => {
   }, [src]);
 
   return (
-    <div className="relative object-contain w-[30%] h-[60vh]">
+    <div className="relative object-contain w-full md:w-[30%] h-[40vh] md:h-[50vh]">
       {loading && (
         <CircularProgress
           style={{

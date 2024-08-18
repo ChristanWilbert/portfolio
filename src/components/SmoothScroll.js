@@ -44,6 +44,8 @@ const HorizontalScrollCarousel = () => {
             transition={{ duration: 1 }}
             className="bg-repeat-x h-24 w-full bg-slate-200 "
             style={{
+              position: "absolute",
+              top: -85,
               backgroundImage: `url(${Wave})`,
               backgroundSize: "contain",
               zIndex: 5,
@@ -53,14 +55,16 @@ const HorizontalScrollCarousel = () => {
             initial={{ translateY: 200 }}
             whileInView={{ translateY: -50 }}
             transition={{ duration: 1 }}
-            className="bg-repeat-x h-32 w-full"
+            className="bg-repeat-x h-36 w-full"
             style={{
+              position: "absolute",
+              top: 0,
               backgroundImage: `url(${Circles})`,
               backgroundSize: "contain",
               zIndex: 4,
             }}
           />
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center mt-24">
             <div className="w-[100vw] font-semibold text-7xl text-center text-white">
               Projects
             </div>
@@ -72,10 +76,12 @@ const HorizontalScrollCarousel = () => {
             initial={{ translateY: -300 }}
             whileInView={{ translateY: 50 }}
             transition={{ duration: 1 }}
-            className="bg-repeat-x h-32 w-full"
+            className="bg-repeat-x h-36 w-full"
             style={{
+              position: "absolute",
               backgroundImage: `url(${Circles})`,
               backgroundSize: "contain",
+              bottom: 0,
               zIndex: 5,
             }}
           />
@@ -85,6 +91,8 @@ const HorizontalScrollCarousel = () => {
             transition={{ duration: 1 }}
             className="bg-repeat-x h-24 w-full bg-slate-200"
             style={{
+              position: "absolute",
+              bottom: -95,
               backgroundImage: `url(${Wave})`,
               backgroundSize: "contain",
               zIndex: 4,

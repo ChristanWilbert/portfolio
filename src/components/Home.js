@@ -8,37 +8,33 @@ const Home = () => {
     >
       <div className="w-4/5 justify-center md:w-2/5 mx-auto">
         <div className="bg-white p-2 mx-auto rounded-lg relative w-full md:max-w-[370px]">
-          <img
-            className="absolute top-0 right-0"
-            src={require("../assets/images/curved-arrow.png")}
-          ></img>
           <div className="w-full">
             <img
-              className="mx-auto rounded-md bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-200 via-slate-500 to-slate-800 gradient border-8 "
-              src={require("../assets/images/pic2.png")}
-            ></img>
+              className="mx-auto rounded-md border-8 h-44"
+              src={require("../assets/images/pic3.png")}
+            />
           </div>
           <div className="flex-column justify-center text-center">
             <p className="bold font-['impact'] text-3xl md:text-5xl">
               CHRISTAN WILBERT
             </p>
-            <div className="p-3 font-['Helvetica']">DEVELOPER</div>
+            <div className="md:p-3 font-['Helvetica']">DEVELOPER</div>
             <img
               className="mx-auto"
               src={require("../assets/images/fire.png")}
             />
-            <p className="p-5 font-['Helvetica'] text-[12px]">
+            <p className="p-2 md:p-5 font-['Helvetica'] text-[12px]">
               A tech afiniado with crazy skills in web and mobile application
               development with AI without the A
             </p>
           </div>
         </div>
-        <div className="flex rounded-l-full rounded-r-full p-4 mx-[8vw] my-10 bg-[#303435] ">
-          <p className=" p-1 w-full font-['Helvetica'] text-[2vw] font-bold text-white text-center">
+        <div className="flex rounded-l-full rounded-r-full p-2 my-2 md:mx-[8vw] md:my-10 bg-[#303435] items-center">
+          <p className=" p-1 w-full font-['Helvetica'] md:text-[1.5vw] font-bold text-white text-center">
             Get In Touch
           </p>
           <img
-            className="h-[3vw]"
+            className="md:h-[3vw]"
             src={require("../assets/images/Group 2.png")}
           />
         </div>
@@ -69,7 +65,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="w-full md:w-[45%] rounded-lg content-center text-center  h-[250px] relative bg-[url('/src/assets/projects/solarometerGreenify.png')] bg-contain bg-no-repeat mx-1 md:m-10">
+          <div className="w-full md:w-[45%] rounded-lg content-center text-center h-[150px] md:h-[250px] relative bg-[url('/src/assets/projects/solarometerGreenify.png')] bg-contain bg-no-repeat mx-1 md:m-10">
             <img
               className="absolute bottom-[20px] right-[20px]"
               src={require("../assets/images/Group 5.png")}
@@ -81,7 +77,7 @@ const Home = () => {
             <div className="text-white text-xl md:text-3xl font-bold pb-8 md:pb-1">
               What I Do For My Customers
             </div>
-            <div className=" text-[#787579] text-sm md:text-base pb-4">
+            <div className=" text-[#787579] text-sm md:text-base pb-4 px-2">
               Dedicated to ensuring companies achieve optimal exposure and meet
               customer expectations. I specialize in presenting businesses with
               the best look and feel on the web, creating scalable and

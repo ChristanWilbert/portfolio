@@ -17,78 +17,82 @@ const About = () => {
               fashion. I would personaly make sure that everythig runs smooth
               with the application of the latest technology.
             </p>
-            <div className="px-auto md:px-10">
-              <p className="p-8 font-['impact'] text-[30px]">Contact</p>
-              <div className="inline m-8 rounded-xl border-2 border-[#787579] text-[#787579] p-6">
+            <div className="px-auto md:px-10 flex flex-col md:flex-row items-center">
+              <p className="p-4 font-['impact'] text-xl md:text-[30px]">
+                Contact
+              </p>
+              <div className="w-[60%] text-center md:w-min mx-auto md:m-8 rounded-xl border-2 border-[#787579] text-[#787579] px-2 md:px-6 md:p-6">
                 cwchristan@gmail.com
               </div>
             </div>
           </div>
-          <div className="mx-auto width-full md:w-[40%] font-['Helvetica']">
-            <div className="p-[3.5rem] m-10 rounded-[90px] border-2 border-[#151412]">
-              <div className="text-[20px] text-[#C0BAC3] px-4">QUICK LINKS</div>
-              <div className="text-[40px] text-white pb-4 pl-4">
+          <div className="mx-auto width-full w-full md:w-[40%] font-['Helvetica']">
+            <div className="p-[1.5rem] md:p-[3.5rem] m-2 md:m-10 rounded-[90px] border-2 border-[#151412]">
+              <div className="text-xl md:text-[20px] text-[#C0BAC3] px-4">
+                QUICK LINKS
+              </div>
+              <div className="text-xl md:text-[40px] text-white pb-4 pl-4">
                 Social Handles
               </div>
               <div className="flex flex-col space-y-6">
-                <div className="flex flex-row w-full justify-around align-baseline">
-                  <div>
+                {/* <div className="flex flex-row w-full justify-around align-baseline items-center">
+                  <div className="w-12 md:w-16">
                     <img src={require("../assets/images/insta.png")}></img>
                   </div>
-                  <div className="my-auto">
-                    <p className="font-bold text-[24px]"> Instagram</p>
+                  <div className="my-auto mx-3">
+                    <p className="font-bold text-lg text-[24px]"> Instagram</p>
                     <p className="text-[16px]">@christan_wilbert</p>
                   </div>
                   <a href="">
-                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-6 py-3">
+                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-2 md:px-6 py-3">
                       GO
                     </div>
                   </a>
-                </div>
-                <div className="flex flex-row w-full justify-around align-baseline">
+                </div> */}
+                <div className="flex flex-row w-full justify-around align-baseline  items-center">
                   <div>
                     <img
                       src={require("../assets/images/linkedinlogo.png")}
                     ></img>
                   </div>
-                  <div className="my-auto">
-                    <p className="font-bold text-[24px]">Linkedin</p>
+                  <div className="my-auto mx-3">
+                    <p className="font-bold text-lg text-[24px]">Linkedin</p>
                     <p className="text-[16px]">@christan_wilbert</p>
                   </div>
                   <a href="https://www.linkedin.com/in/christan-wilbert/">
-                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-6 py-3">
+                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-2 md:px-6 py-3">
                       GO
                     </div>
                   </a>
                 </div>
-                <div className="flex flex-row w-full justify-around align-baseline">
+                <div className="flex flex-row w-full justify-around align-baseline items-center">
                   <div>
                     <img
                       src={require("../assets/images/discordlogo.png")}
                     ></img>
                   </div>
-                  <div className="my-auto">
-                    <p className="font-bold text-[24px]">Discord</p>
+                  <div className="my-auto mx-3">
+                    <p className="font-bold text-lg md:text-[24px]">Discord</p>
                     <p className="text-[16px]">@christan_wilbert</p>
                   </div>
                   <a href="https://discordapp.com/users/christan6016">
-                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-6 py-3">
+                    <div className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-2 md:px-6 py-3">
                       GO
                     </div>
                   </a>
                 </div>
-                <div className="flex flex-row w-full justify-around align-baseline">
+                <div className="flex flex-row w-full justify-around align-baseline items-center">
                   <div>
                     <img src={require("../assets/images/gitlogo.png")}></img>
                   </div>
-                  <div className="my-auto">
-                    <p className="font-bold text-[24px]">GitHub</p>
+                  <div className="my-auto mx-3">
+                    <p className="font-bold text-lg text-[24px]">GitHub</p>
                     <p className="text-[16px]">@christan_wilbert</p>
                   </div>
                   <a href="https://github.com/ChristanWilbert">
                     <div
                       id="certificate"
-                      className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-6 py-3"
+                      className="my-auto rounded-l-full rounded-r-full text-[20px] text-white bg-[#2E2E2F] px-2 md:px-6 py-3"
                     >
                       GO
                     </div>

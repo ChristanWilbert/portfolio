@@ -12,9 +12,9 @@ const AWSBadge = ({ title, category, level }) => {
         )
       }
     >
-      <div className=" flex flex-col w-[300px] h-52 rounded-[1.25rem] p-6 border border-b-4 border-[#787579] bg-cover my-3 bg-[url('/src/assets/images/bg3.png')] shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:z-200 group-hover:translate-x-6 group-hover:translate-y-[-10px]">
+      <div className=" flex flex-col w-[200px] md:w-[300px] h-52 rounded-[1.25rem] p-6 border border-b-4 border-[#787579] bg-cover my-3 bg-[url('/src/assets/images/bg3.png')] shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:z-200 group-hover:translate-x-6 group-hover:translate-y-[-10px]">
         <img className="mx-auto" src={require("../assets/images/badge2.png")} />
-        <div className="text-center font-['Helvetica'] text-[18px] text-[#C0BAC3]">
+        <div className="text-center font-['Helvetica'] text-sm md:text-[18px] text-[#C0BAC3]">
           {title}
         </div>
         <div className="text-center p-1 font-['HelveticaNueRoman'] text-[10px] text-[#787579]">
@@ -57,19 +57,19 @@ const Certificate = () => {
   return (
     <div
       id="certificate"
-      className=" relative h-max mx-8 my-[100px] text-[#C0BAC3] bg-fixed bg-cover rounded-xl bg-[url('/src/assets/images/bg21.png')] font-['Helvetica']"
+      className=" relative h-max mx-8 my-10 md:my-[100px] text-[#C0BAC3] bg-fixed bg-cover rounded-xl bg-[url('/src/assets/images/bg21.png')] font-['Helvetica']"
     >
       <div className="absolute top-[-.5%] md:top-[-50px] px-8 font-['Weimar'] text-[#ffffff] text-3xl md:text-[80px]">
         CERTIFICATES
       </div>
-      <p className="w-[70%] px-10 py-16 text-lg">
+      <p className="w-[95%] md:w-[70%] px-10 py-16 text-lg">
         Skill Badges and Certification earned while mastering various tools and
         technologies
       </p>
-      <div className="absolute top-[50px] right-[50px] px-8 ">
+      <div className="absolute top-0 md:top-[50px] right-0 md:right-[50px] md:px-8 w-20 md:w-auto">
         <img src={require("../assets/images/badge.png")} />
       </div>
-      <div className="mx-auto w-[80%] flex flex-wrap justify-center pb-8 space-x-[-80px]">
+      <div className="mx-auto w-full md:w-[80%] flex flex-wrap justify-center pb-8 md:space-x-[-80px]">
         <AWSBadge
           title={"Perform Foundational Infrastructure Tasks in Google Cloud"}
           category={"Infrastructure Modernization"}

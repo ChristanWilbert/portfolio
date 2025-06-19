@@ -97,6 +97,22 @@ main {
   padding: 0 1rem;
 }
 
+.blinking-bulb {
+  animation: blink 1s linear infinite; /* Adjust duration and timing as needed */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
   header nav {

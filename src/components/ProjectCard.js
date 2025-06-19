@@ -4,12 +4,10 @@ import ImageWithLoader from "./ImageWithLoader";
 export const ProjectCard = ({ card }) => {
   let imageUrl = "";
   try {
-    console.log(card.url);
     imageUrl = require(`../assets/projects/${
       card && card.url ? card.url : "star.png"
     }`);
   } catch (error) {
-    console.log(error);
     imageUrl = require("../assets/images/ASTERIKS.png");
   }
   return (

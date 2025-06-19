@@ -9,6 +9,7 @@ import "./fonts/HelveticaReg.ttf";
 import Certificate from "./components/Certificate";
 import Skills from "./components/Skills";
 import ContactForm from "./components/Contact";
+import Chat from "./components/Chat.jsx";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Skills />
       <Projects />
       <ContactForm />
+      <Chat />
     </div>
   );
 };

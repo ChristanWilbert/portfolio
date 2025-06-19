@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import AlertDialog from "./ConfirmationDialog";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const ContactForm = () => {
     phoneNumber: "",
     message: "",
   });
+  const [alert, setalert] = useState({ open: false, title: "", message: "" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,20 +22,32 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // const response = await fetch("https://mock.httpstatus.io/200", {
+    //   method: "GET",
+    // });
 
-    const response = await fetch(
-      "https://00tkjih5x1.execute-api.ap-south-1.amazonaws.com/default/getInTouchMail",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      }
-    );
-
+    const response = await fetch(process.env.REACT_APP_BackendURL3 || "", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
     const result = await response.json();
-    console.log(result);
+
+    JSON.parse(result.body) == "Email sent successfully!"
+      ? setalert({
+          ...alert,
+          open: true,
+          title: "Email Sent Successfully",
+          message: "will reach out to you at the earliest",
+        })
+      : setalert({
+          ...alert,
+          open: true,
+          title: "Something went wrong",
+          message: "please reach out to me via email",
+        });
   };
 
   return (
@@ -41,6 +55,7 @@ const ContactForm = () => {
       id="contact"
       className="bg-black text-white p-8 rounded-lg mx-3 md:mx-[20%] my-10"
     >
+      {alert ? <AlertDialog alert={alert} /> : <></>}
       <h1 className="text-center mb-4 text-5xl md:text-7xl font-HNlight">
         Let's Have a Chat{" "}
         <span role="img" aria-label="wave">

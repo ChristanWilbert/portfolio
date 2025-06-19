@@ -7,12 +7,22 @@ const skillLevel = (val) => {
   const num = [];
   for (let index = 0; index < val; index++) {
     num.push(
-      <img className="mx-1 object-cover w-3 h-3" src={bon} key={index} />
+      <img
+        className="mx-1 object-cover w-3 h-3"
+        src={bon}
+        key={index}
+        alt="skill level"
+      />
     );
   }
   for (let index = 0; index < 10 - val; index++) {
     num.push(
-      <img className="mx-1 object-cover w-3 h-3" src={boff} key={index} />
+      <img
+        className="mx-1 object-cover w-3 h-3"
+        src={boff}
+        key={index}
+        alt="skill level"
+      />
     );
   }
   return (
@@ -20,7 +30,6 @@ const skillLevel = (val) => {
   );
 };
 const Skills = () => {
-  const items = ["that is ", "not good"];
   return (
     <div
       id="skills"

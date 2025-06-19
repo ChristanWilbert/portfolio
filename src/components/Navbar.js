@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import wakeUpBackendRequest from "../utils/wakeUpBackendRequest";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
@@ -8,6 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  wakeUpBackendRequest();
 
   return (
     <nav className="fixed w-full bg-black text-white p-4 flex flex-col md:flex-row justify-center items-center z-50 m-0">
